@@ -31,7 +31,7 @@ assert COMPUTE_TIER in ("T4", "BIGGPU"), f"Invalid COMPUTE_TIER: {COMPUTE_TIER}"
 
 # Tier-specific hyperparameters
 if COMPUTE_TIER == "T4":
-    BASE_MODEL = "unsloth/Qwen2.5-3B-bnb-4bit"
+    BASE_MODEL = "unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit"
     MAX_LEN = 512
     PER_DEVICE_BATCH = 1
     GRAD_ACCUM = 8
